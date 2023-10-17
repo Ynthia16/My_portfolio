@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> My portfolio</title>
+<link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/C icon.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#"> Services</a></li>
+                <li><a href="#"> Portfolio</a></li>
+                <li> <a href="#"> Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="header-text">
+            <p> Aspiring Web Developer</p>
+            <h1>Hi, I'm <span>Cynthia</span><br> Umugwaneza From Rwanda</h1>
+        </div>
+    </div>
+    <!------------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic-work-01.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a dedicated student pursuing software engineering at African Leadership University, with a strong passion for web development. My journey into web development began with a curiosity for crafting elegant and user-friendly websites.
+                        While I'm relatively new to this field, I'm actively building a portfolio of web projects to gain hands-on experience. I aim to contribute to the ever-evolving world of web development and create impactful solutions.
+                        Beyond coding, I'm an avid reader and deeply committed to leveraging my software skills to make a positive impact in the field of mental health.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul> 
+                            <li><span>Python Programming</span><br>Python Programming</li>
+                            <li><span>Front-End Web Development</span><br> Web app development</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br> Software engineering student at ALU</li>
+                            <li><span>2023 -current</span><br>Frontend Mentor Practitioner</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> 2023</span><br>Software engineering student at ALU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="script.js"></script>
+</body>
+
+</html>
+
