@@ -7,21 +7,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> My portfolio</title>
 <link rel="stylesheet" href="style.css"> 
+<script src="https://kit.fontawesome.com/8807463019.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/C icon.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#"> Services</a></li>
-                <li><a href="#"> Portfolio</a></li>
-                <li> <a href="#"> Contact</a></li>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#experience"> Experience</a></li>
+                <li> <a href="#contact"> Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p> Aspiring Web Developer</p>
@@ -42,21 +44,21 @@
                         Beyond coding, I'm an avid reader and deeply committed to leveraging my software skills to make a positive impact in the field of mental health.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('hardskills')"> Hard Skills</p>
+                        <p class="tab-links" onclick="opentab('softskills')">Soft skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id=" hardskills">
                         <ul> 
-                            <li><span>Python Programming</span><br>Python Programming</li>
+                            <li><span>Python Programming</span><br> Proficient in Python scripting, data analysis, and automation. Published articles and projects showcasing Python skills.</li>
                             <li><span>Front-End Web Development</span><br> Web app development</li>
                         </ul>
 
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents" id="softskills">
                         <ul>
-                            <li><span>2023 - current</span><br> Software engineering student at ALU</li>
-                            <li><span>2023 -current</span><br>Frontend Mentor Practitioner</li>
+                            <li><span>Innovative Thinker</span><br>I find creative, efficient solutions to complex problems, injecting innovation into projects.</li>
+                            <li><span>Team Player</span><br>I excel in collaborative environments, fostering teamwork among developers, designers, and project managers.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -107,6 +109,35 @@
             </div>
         </div>
     </div>
+<!------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>c.umugwanez@alustudent.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i>+250 780 786 039</p>
+                <div class="social-icons">
+                    <a href="http://linkedin.com/in/cynthia-umugwaneza-91367b253"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="@Ynthia16"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            <a href="images/Cynthia's resume-Andela.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; Cynthia. Made by Cynthia Umugwaneza</p>
+    </div>
+</div>
 
   
     <script src="script.js"></script>
